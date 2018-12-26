@@ -2,7 +2,7 @@ const express = require('express');
 const people = require('./people.json');
 
 const app = express();
-const port = 5009;
+const port = process.env.PORT || 5009;
 
 app.engine('pug', require('pug').__express);
 app.set('views', `${__dirname}/views`);
