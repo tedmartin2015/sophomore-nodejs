@@ -2,7 +2,7 @@ var gulp = require('gulp');
 
 var nodemon = require('gulp-nodemon');
 
-gulp.task('default', () => {
+gulp.task('launch_website', () => {
     return new Promise((resolve, reject) => {
         nodemon({
             script: 'app.js',
