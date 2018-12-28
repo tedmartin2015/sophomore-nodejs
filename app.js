@@ -19,6 +19,7 @@ app.get('/', (req, res) => {
         });
 });
 
+//test...
 app.get('/profile', (req, res) => {
     const person = people.profiles.find(p => p.id === req.query.id);
     res.render(

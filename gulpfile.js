@@ -3,7 +3,7 @@ var gulp = require('gulp');
 var nodemon = require('gulp-nodemon');
 
 gulp.task('default', () => {
-    return new Promise(function (resolve, reject) {
+    return new Promise((resolve, reject) => {
         nodemon({
             script: 'app.js',
             ext: 'js',
